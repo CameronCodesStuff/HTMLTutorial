@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SimpleWebsiteTutorial</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+    section {
+      margin: 40px 20px;
+      padding: 20px;
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: #333;
+    }
+    pre {
+      padding: 15px;
+      border-radius: 5px;
+      font-family: "Courier New", Courier, monospace;
+      overflow-x: auto;
+      white-space: pre-wrap; /* Ensures the code doesn't overflow */
+      background-color: transparent; /* Removed the background highlight */
+    }
+    code {
+      font-family: "Courier New", Courier, monospace;
+      padding: 5px;
+      border-radius: 5px;
+    }
+    .example {
+      margin-top: 30px; /* Increased gap between example and code */
+      padding: 10px;
+      background-color: #e7f7e7;
+      border: 1px solid #4CAF50;
+      border-radius: 5px;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      margin-top: 40px; /* Adds more space between footer and content */
+    }
+    .side-note {
+      font-size: 14px;
+      color: #666;
+      background-color: #f5f5f5;
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 10px;
+      width: 45%;
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Learn to Build a Simple Website</h1>
+  <p>A beginner-friendly guide with examples</p>
+</header>
+
+<section>
+  <h2>Step 1: Create Your HTML Structure</h2>
+  <p>HTML (Hypertext Markup Language) is the foundation of any website. It defines the structure and content of your website.</p>
+  <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;My First Website&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;
+      &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;section&gt;
+      &lt;p&gt;This is my first website. I'm learning HTML!&lt;/p&gt;
+    &lt;/section&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  <div class="example">
+    <p><strong>Example:</strong> This is a simple HTML structure with a header and a section. You can copy and paste the above code into a text file and save it as <code>index.html</code> to see the result in your browser.</p>
+  </div>
+  <div class="side-note">
+    <p><strong>Explanation:</strong></p>
+    <ul>
+      <li><strong>&lt;!DOCTYPE html&gt;</strong>: Declares the document type as HTML5.</li>
+      <li><strong>&lt;html&gt;</strong>: The root element of the document.</li>
+      <li><strong>&lt;head&gt;</strong>: Contains meta-information about the document (e.g., title, character encoding).</li>
+      <li><strong>&lt;body&gt;</strong>: Contains the content of the page visible to the user.</li>
+      <li><strong>&lt;header&gt;</strong>: Defines the header section of the webpage.</li>
+      <li><strong>&lt;h1&gt;</strong>: A header tag, usually the main title of the page.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Step 2: Add Some Style with CSS</h2>
+  <p>CSS (Cascading Style Sheets) is used to style and format your HTML content. It controls the layout, colors, fonts, and other visual aspects of the website.</p>
+  <pre><code>body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+section {
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}</code></pre>
+  <div class="example">
+    <p><strong>Example:</strong> This CSS styles the body, header, and section. To use it, create a new file called <code>style.css</code> and link it in your HTML like this:</p>
+    <pre><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
+  </div>
+  <div class="side-note">
+    <p><strong>Explanation:</strong></p>
+    <ul>
+      <li><strong>body {}</strong>: Sets the global styling for the page, like font and background color.</li>
+      <li><strong>header {}</strong>: Styles the header with background color, text color, and padding.</li>
+      <li><strong>section {}</strong>: Adds margin, padding, and a shadow to make the section stand out.</li>
+      <li><strong>&lt;link&gt;</strong>: Links an external CSS file to the HTML document.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Step 3: Make Your Website Interactive with JavaScript</h2>
+  <p>JavaScript adds interactivity to your website. It allows you to manipulate the content, respond to user actions, and create dynamic elements.</p>
+  <pre><code>function greetUser() {
+  alert("Hello! Welcome to my website!");
+}
+
+&lt;button onclick="greetUser()"&gt;Click Me&lt;/button&gt;</code></pre>
+  <div class="example">
+    <p><strong>Example:</strong> This JavaScript function displays a greeting message when you click a button. You can add the JavaScript code inside a <code>&lt;script&gt;</code> tag in your HTML, or link it externally.</p>
+  </div>
+  <div class="side-note">
+    <p><strong>Explanation:</strong></p>
+    <ul>
+      <li><strong>function greetUser()</strong>: Defines a function called <em>greetUser</em> that triggers an alert.</li>
+      <li><strong>alert("...")</strong>: Displays a popup alert with the provided message.</li>
+      <li><strong>&lt;button onclick="greetUser()"&gt;</strong>: The button triggers the <em>greetUser()</em> function when clicked.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Step 4: Putting It All Together</h2>
+  <p>Now, let’s combine HTML, CSS, and JavaScript to create a simple, interactive website.</p>
+  <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Interactive Website&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;
+      &lt;h1&gt;Welcome to My Interactive Website&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;section&gt;
+      &lt;p&gt;Click the button below to see the magic happen!&lt;/p&gt;
+      &lt;button onclick="greetUser()"&gt;Click Me&lt;/button&gt;
+    &lt;/section&gt;
+    &lt;script&gt;
+      function greetUser() {
+        alert("Hello! Welcome to my interactive website!");
+      }
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  <div class="example">
+    <p><strong>Example:</strong> This combines HTML, CSS, and JavaScript. When you click the button, a JavaScript alert will pop up with a greeting message.</p>
+  </div>
+  <div class="side-note">
+    <p><strong>Explanation:</strong></p>
+    <ul>
+      <li><strong>&lt;script&gt;</strong>: Contains the JavaScript code that defines the <em>greetUser()</em> function.</li>
+      <li><strong>&lt;button&gt;</strong>: The button triggers the JavaScript function <em>greetUser()</em> when clicked.</li>
+      <li><strong>Combining HTML, CSS, and JavaScript</strong>: The page layout, styles, and interactivity are all combined into a single working example.</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; CameronCodesStuff</p>
+</footer>
+
+</body>
+</html>
